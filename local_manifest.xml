@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/LineageOS-on-BraX3" name="github"/>
+
+  <!-- Remove unused Android Common Kernel projects -->
+  <remove-project name="kernel/common"/>
+  <remove-project name="kernel/common-modules/virtual-device"/>
+
+  <!-- Track BraX3 kernel projects -->
+  <project remote="github" name="android_kernel_brax_mt6835" path="kernel-5.15">
+    <linkfile src="build.config.mtk.aarch64.mgk" dest="build.config" />
+  </project>
+  <project remote="github" name="android_kernel_modules_brax_mt6835" path="vendor/mediatek/kernel_modules"/>
+</manifest>
