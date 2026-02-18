@@ -3,10 +3,6 @@
   <remote fetch="https://github.com/LineageOS-on-BraX3" name="github"/>
   <remote fetch="https://android.googlesource.com" name="aosp"/>
 
-  <!-- Remove unused Android Common Kernel projects -->
-  <remove-project name="kernel/common"/>
-  <remove-project name="kernel/common-modules/virtual-device"/>
-
   <!-- Track libudft from AOSP -->
   <project remote="aosp" name="platform/system/libufdt" path="system/libufdt" revision="android13-release"/>
 
