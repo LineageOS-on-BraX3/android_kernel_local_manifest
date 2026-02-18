@@ -15,4 +15,5 @@
     <linkfile src="build.config.mtk.aarch64.mgk" dest="build.config" />
   </project>
   <project remote="github" name="android_kernel_modules_brax_mt6835" path="vendor/mediatek/kernel_modules"/>
+  <project remote="github" name="android_kernel-brax" path="kernel-brax"/>
 </manifest>
