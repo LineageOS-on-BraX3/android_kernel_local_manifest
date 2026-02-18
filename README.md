@@ -10,6 +10,10 @@ To initialize your local repository using the Google kernel manifest, use a comm
 ```
 repo init -u https://android.googlesource.com/kernel/manifest.git -b common-android13-5.15
 ```
+Then use a command like this to clone the local manifest at the root of your local repository:
+```
+git clone git@github.com:LineageOS-on-BraX3/android_kernel_local_manifest.git .repo/local_manifests
+```
 Then to sync up:
 ```
 repo sync
